@@ -28,12 +28,12 @@ if(isFetching) return "loading ...";
     <>
     {!simplified && (
      <div classname="search-crypto">
-<Input placeholder='Search Cryptocurrency' onChange={(e) => setSearchTerm(e.target.value)} />
+<Input placeholder='Search Cryptocurrency' onChange={(e) => setSearchTerm(e.target.value)} style={{ marginLeft: '12%', marginBottom: "10px", width: '350px' }}  />
     </div> 
     )}
-    <Row gutters={[32, 32]} className='crypto-card-container'>
+    <Row gutters={[32, 32]} className='crypto-card-container' style={{ marginLeft: '12%',  }}>
 {cryptos?.map((currency) => (
-  <Col xs={24} sm={12} lg={6} classname="crypto-card" key={currency.id}>
+  <Col xs={24} sm={12} lg={6} classname="crypto-card " key={currency.id} style={{  marginBottom: "10px",   }} >
 <Link to={`/crypto/${currency.id}`}>
   <Card
   title={`${currency.rank}. ${currency.name}`}

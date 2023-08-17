@@ -17,7 +17,7 @@ const News = ({ simplified }) => {
   if(!cryptoNews?.value) return "loading...";
 
   return (
-   <Row gutter ={[ 24, 24 ]}>
+   <Row gutter ={[ 24, 24 ]} style={{ marginLeft: '12%' }}>
     {!simplified && (
       <Col span={24}>
       <Select
@@ -39,10 +39,10 @@ const News = ({ simplified }) => {
     )}
 {cryptoNews.value.map((news, i) => (
   <Col sx={24} sm={12} lg={8} key={i}>
-    <Card hoverable className='news-card'>
+    <Card hoverable className='news-card' >
 <a href={news.url} targey="_blank" rel="noreferrer">
   <div className='news-image-container'>
-    <Title className="news-title" level={4}>{news.name} </Title>
+    <Title className="news-title" level={4}>{news.name}  </Title>
     <img style={{maxWidth: '200px', maxHeight: '100px'}} src={news?.image?.thumbnail?.contentUrl  || demoImage } alt="news" />
   </div>
   <p>
