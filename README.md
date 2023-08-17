@@ -1,6 +1,6 @@
 # Crypto X - Aplicación de Criptomonedas
 
-![Crypto X Logo](src/imagenes/crypto.png)
+![Crypto X Logo](https://images.unsplash.com/photo-1654089698437-605524531923?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)
 
 Crypto X es una aplicación web que te permite obtener información en tiempo real sobre criptomonedas, noticias y seguimiento de mercado. La aplicación está construida utilizando React y Ant Design, y consume datos de varias APIs relacionadas con criptomonedas y noticias.
 
