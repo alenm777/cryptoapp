@@ -18,8 +18,8 @@ const HomePage = () => {
 
   return (
    <>
-   <Title level={2} className='heading' style={{ marginLeft: '2%' }}> Estadísticas Mundiales de Criptomonedas</Title>
-   <Row gutter={[32, 32]} style={{ marginLeft: '2%' }}>
+   <Title level={2} className='heading' > Estadísticas Mundiales de Criptomonedas</Title>
+   <Row gutter={[32, 32]} >
    <Col span={12}><Statistic title="Criptomonedas Totales" value={globalStats.total} /></Col>
         <Col span={12}><Statistic title="Intercambios Totales" value={millify(globalStats.totalExchanges)} /></Col>
         <Col span={12}><Statistic title="Capitalización Bursátil Total:" value={`$${millify(globalStats.totalMarketCap)}`} /></Col>
@@ -28,12 +28,12 @@ const HomePage = () => {
         <Col span={12}><Statistic title="Mercado Total" value={millify(globalStats.totalMarkets)} /></Col>
    </Row>
    <div className='home-heading-container'>
-<Title level={2} className='home-title' style={{ marginLeft: '2%' }}> Top 10 Criptomonedas en el Mundo</Title>
-<Title level={3} className='show-more' style={{ marginLeft: '2%' }}><Link to="/cryptocurrencies">Ver más </Link></Title>
+<Title level={2} className='home-title' > Top 10 Criptomonedas en el Mundo</Title>
+<Title level={3} className='show-more' ><Link to="/cryptocurrencies">Ver más </Link></Title>
    </div>
    <Cryptocurrencies simplified />
    <div className='home-heading-container'>
-<Title level={2} className='home-title' style={{ marginLeft: '2%' }}> Últimas noticias sobre Criptomonedas</Title>
+<Title level={2} className='home-title' > Últimas noticias sobre Criptomonedas</Title>
 <Title level={3} className='show-more'><Link to="/news">Ver más </Link></Title>
    </div>
    <News simplified />

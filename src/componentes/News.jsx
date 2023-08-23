@@ -19,7 +19,7 @@ const News = ({ simplified }) => {
    if (!cryptoNews?.value) return <Loader />;
 
   return (
-   <Row gutter ={[ 26, 26 ]} style={{ marginLeft: '2%' }}>
+   <Row gutter ={[ 26, 26 ]}>
     {!simplified && (
       <Col span={24}>
       <Select
