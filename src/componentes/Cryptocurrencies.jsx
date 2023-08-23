@@ -30,8 +30,7 @@ useEffect(() => {
      <div className="search-crypto">
 <Input 
 placeholder='Buscar Criptomoneda' 
-onChange={(e) => setSearchTerm(e.target.value.toLowerCase())} 
-style={{  marginBottom: "10px", width: '350px' }}  
+onChange={(e) => setSearchTerm(e.target.value.toLowerCase())}  
 />
     </div> 
     )}
@@ -43,7 +42,7 @@ style={{  marginBottom: "10px", width: '350px' }}
             lg={6}
             className="crypto-card "
             key={currency.uuid}
-            style={{ marginBottom: "10px" }}
+           
           >
             <Link to={`/crypto/${currency.id}`}>
               <Card
