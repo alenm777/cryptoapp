@@ -17,4 +17,4 @@ Crypto X es una aplicación web que te permite obtener información en tiempo re
 - [Crypto API](https://api.example.com/cryptos) - Para obtener información de criptomonedas.
 - [News API](https://api.example.com/news) - Para obtener noticias relacionadas con criptomonedas.
 
-
+Por favor, toma en cuenta que algunas funciones de la aplicación pueden estar limitadas debido a la naturaleza de la API de criptomonedas, la cual es de pago. Gracias por tu comprensión!
