@@ -31,11 +31,11 @@ useEffect(() => {
 <Input 
 placeholder='Buscar Criptomoneda' 
 onChange={(e) => setSearchTerm(e.target.value.toLowerCase())} 
-style={{ marginLeft: '12%', marginBottom: "10px", width: '350px' }}  
+style={{ marginLeft: '2%', marginBottom: "10px", width: '350px' }}  
 />
     </div> 
     )}
-  <Row gutters={[32, 32]} className='crypto-card-container' style={{ marginLeft: '12%' }}>
+  <Row gutters={[32, 32]} className='crypto-card-container' style={{ marginLeft: '2%' }}>
       {cryptos?.map((currency) => (
           <Col
             xs={24}
