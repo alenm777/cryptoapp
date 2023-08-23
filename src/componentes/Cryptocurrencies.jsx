@@ -29,7 +29,7 @@ useEffect(() => {
     {!simplified && (
      <div className="search-crypto">
 <Input 
-placeholder='Search Cryptocurrency' 
+placeholder='Buscar Criptomoneda' 
 onChange={(e) => setSearchTerm(e.target.value.toLowerCase())} 
 style={{ marginLeft: '12%', marginBottom: "10px", width: '350px' }}  
 />
@@ -45,15 +45,15 @@ style={{ marginLeft: '12%', marginBottom: "10px", width: '350px' }}
             key={currency.uuid}
             style={{ marginBottom: "10px" }}
           >
-            <Link to={`/crypto/${currency.uuid}`}>
+            <Link to={`/crypto/${currency.id}`}>
               <Card
                 title={`${currency.rank}. ${currency.name}`}
                 extra={<img className='crypto-image' src={currency.iconUrl} style={{ maxWidth: '35px' }} />}
                 hoverable
               >
-                <p>Price: {millify(currency.price)}</p>
-                <p>Market Cap: {millify(currency.marketCap)}</p>
-                <p>Daily Change: {millify(currency.change)}%</p>
+                <p>Precio: {millify(currency.price)}</p>
+                <p>Capitalización bursátil: {millify(currency.marketCap)}</p>
+                <p>Cambios diarios: {millify(currency.change)}%</p>
               </Card>
             </Link>
           </Col>

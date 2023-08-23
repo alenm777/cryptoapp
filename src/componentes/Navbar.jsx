@@ -38,16 +38,16 @@ useEffect(() => {
         {activeMenu && (
                <Menu theme='dark'>
 <Menu.Item icon={<HomeOutlined />}>
-    <Link to="/">Home</Link>
+    <Link to="/">Inicio</Link>
 </Menu.Item>
 <Menu.Item icon={<FundOutlined />}>
-    <Link to="/cryptocurrencies">Cryptocurrencies</Link>
+    <Link to="/cryptocurrencies">Criptomonedas</Link>
 </Menu.Item>
 <Menu.Item icon={<MoneyCollectOutlined/>}>
-    <Link to="/exchanges">Exchanges</Link>
+    <Link to="/exchanges">Intercambios</Link>
 </Menu.Item>
 <Menu.Item icon={<BulbOutlined />}>
-    <Link to="/news">News</Link>
+    <Link to="/news">Noticias</Link>
 </Menu.Item>
         </Menu> 
         )}

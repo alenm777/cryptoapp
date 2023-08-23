@@ -19,18 +19,18 @@ const News = ({ simplified }) => {
    if (!cryptoNews?.value) return <Loader />;
 
   return (
-   <Row gutter ={[ 24, 24 ]} style={{ marginLeft: '12%' }}>
+   <Row gutter ={[ 26, 26 ]} style={{ marginLeft: '12%' }}>
     {!simplified && (
       <Col span={24}>
       <Select
       showSearch
       className='select-news'
-      placeholder="Select a Crypto"
+      placeholder="Seleccione una criptomoneda"
       optionFilterProp="children"
       onChange={(value) => setNewsCategory(value)}
       filterOption={(input, option) => option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
       >
-<Option value="Cryptocurrency"> Cryptocurrency </Option>
+<Option value="Cryptocurrency"> Criptomoneda </Option>
 {data?.data?.coins.map((coin) => (
 <Option key={coin.name} value={coin.name}>
   {coin.name}

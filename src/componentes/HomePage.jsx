@@ -18,23 +18,23 @@ const HomePage = () => {
 
   return (
    <>
-   <Title level={2} className='heading' style={{ marginLeft: '12%' }}> Global Crypto Stats</Title>
+   <Title level={2} className='heading' style={{ marginLeft: '12%' }}> Estadísticas Mundiales de Criptomonedas</Title>
    <Row gutter={[32, 32]} style={{ marginLeft: '12%' }}>
-   <Col span={12}><Statistic title="Total Cryptocurrencies" value={globalStats.total} /></Col>
-        <Col span={12}><Statistic title="Total Exchanges" value={millify(globalStats.totalExchanges)} /></Col>
-        <Col span={12}><Statistic title="Total Market Cap:" value={`$${millify(globalStats.totalMarketCap)}`} /></Col>
-        <Col span={12}><Statistic title="Total 24h Volume" value={`$${millify(globalStats.total24hVolume)}`} /></Col>
-        <Col span={12}><Statistic title="Total Cryptocurrencies" value={globalStats.total} /></Col>
-        <Col span={12}><Statistic title="Total Markets" value={millify(globalStats.totalMarkets)} /></Col>
+   <Col span={12}><Statistic title="Criptomonedas Totales" value={globalStats.total} /></Col>
+        <Col span={12}><Statistic title="Intercambios Totales" value={millify(globalStats.totalExchanges)} /></Col>
+        <Col span={12}><Statistic title="Capitalización Bursátil Total:" value={`$${millify(globalStats.totalMarketCap)}`} /></Col>
+        <Col span={12}><Statistic title="Volumen Total 24hs" value={`$${millify(globalStats.total24hVolume)}`} /></Col>
+        <Col span={12}><Statistic title="Criptomonedas Total " value={globalStats.total} /></Col>
+        <Col span={12}><Statistic title="Mercado Total" value={millify(globalStats.totalMarkets)} /></Col>
    </Row>
    <div className='home-heading-container'>
-<Title level={2} className='home-title' style={{ marginLeft: '12%' }}> Top 10 Cryptocurrencies in the world</Title>
-<Title level={3} className='show-more' style={{ marginLeft: '12%' }}><Link to="/cryptocurrencies">Show More </Link></Title>
+<Title level={2} className='home-title' style={{ marginLeft: '12%' }}> Top 10 Criptomonedas en el Mundo</Title>
+<Title level={3} className='show-more' style={{ marginLeft: '12%' }}><Link to="/cryptocurrencies">Ver más </Link></Title>
    </div>
    <Cryptocurrencies simplified />
    <div className='home-heading-container'>
-<Title level={2} className='home-title' style={{ marginLeft: '12%' }}> Latest Crypto News</Title>
-<Title level={3} className='show-more'><Link to="/news">Show More </Link></Title>
+<Title level={2} className='home-title' style={{ marginLeft: '12%' }}> Últimas noticias sobre Criptomonedas</Title>
+<Title level={3} className='show-more'><Link to="/news">Ver más </Link></Title>
    </div>
    <News simplified />
    </>

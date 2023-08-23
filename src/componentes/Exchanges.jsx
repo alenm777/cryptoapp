@@ -17,10 +17,10 @@ const Exchanges = () => {
   return (
     <>
   <Row>
-    <Col span ={6}> Exchanges </Col>
-    <Col span ={6}> 24hs Trade Volume </Col>
-    <Col span ={6}> Markets </Col>
-    <Col span ={6}> Change </Col>
+    <Col span ={6}> Intercambios </Col>
+    <Col span ={6}> Volumen de operaciones 24 hs</Col>
+    <Col span ={6}> Mercados </Col>
+    <Col span ={6}> Cambiar </Col>
   </Row>
   <Row>
    {/* {exchangesList.map((exchange) => (

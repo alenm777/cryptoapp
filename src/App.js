@@ -26,12 +26,12 @@ const App = () => {
     <div className="footer">
     <Typography.Title level={5} style={{color: "white", textAlign: "center" }}>
         Crypto X <br />
-        All rights reserverd
+        Todos los derechos reservados
     </Typography.Title>
     <Space>
-        <Link to="/">Home</Link>
-        <Link to="/exchanges">Exchanges</Link>
-        <Link to="/news">News</Link>
+        <Link to="/">Inicio</Link>
+        <Link to="/exchanges">Intercambios</Link>
+        <Link to="/news">Noticias</Link>
     </Space>
     </div>
     </div>
