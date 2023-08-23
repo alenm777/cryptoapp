@@ -20,4 +20,4 @@ const cryptoNewsHeaders =   {
   })
   });
 
-  export const { useGetCryptoNewsQuery } = cryptoNewsApi;
+  export const { useGetCryptoNewsQuery } = cryptoNewsApi; 
